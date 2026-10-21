@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Memory Vault – Convert Old Media to Digital | Edmonton, AB</title>
+<meta name="description" content="Memory Vault converts VHS, VHS-C, Betamax, MiniDV, Hi8, 8mm film and CDs to digital. Based in Edmonton, shipping across Canada.">
+<style>
+:root{
+  --navy:#032f49;--navy2:#0b3f60;--red:#e5262d;--blue:#1a5fd0;--ice:#eaf3fe;--bg:#ffffff;--text:#0f2342;--muted:#4a5d7a;--card:#ffffff;--line:#cfe0f7;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1528;--text:#eaf1fc;--muted:#a3b5d1;--card:#12223f;--ice:#12223f;--line:#27406b;--blue:#6aa3ff;}}
+:root[data-theme="dark"]{--bg:#0a1528;--text:#eaf1fc;--muted:#a3b5d1;--card:#12223f;--ice:#12223f;--line:#27406b;--blue:#6aa3ff;}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:block;line-height:0}
+.logo img{height:48px;width:auto;display:block}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-size:.95rem;opacity:.9}
+nav a:hover{opacity:1}
+@media(max-width:600px){nav a:not(.cta){display:none}}
+.cta{background:var(--red);padding:8px 16px;border-radius:8px;font-weight:700}
+.hero{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;text-align:center;padding:72px 0 80px}
+.herologo{width:min(380px,80%);height:auto;margin:0 auto 24px;display:block;border-radius:10px}
+.hero h1{font-size:clamp(2rem,5vw,3.4rem);margin:0 0 12px;line-height:1.1;font-weight:900}
+.hero p{font-size:1.2rem;opacity:.9;margin:0 auto 28px;max-width:560px}
+.script{font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.6rem;color:#fff;margin-top:28px}
+.script::after{content:"";display:block;width:180px;height:4px;background:var(--red);border-radius:4px;margin:6px auto 0}
+.btn{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:10px;margin:4px}
+.btn.alt{background:transparent;border:2px solid #fff}
+section{padding:64px 0}
+h2{text-align:center;font-size:clamp(1.6rem,3.5vw,2.2rem);margin:0 0 36px;font-weight:900}
+h2::before,h2::after{content:"";display:inline-block;width:40px;height:4px;background:var(--red);vertical-align:middle;margin:0 14px;border-radius:2px}
+@media(max-width:520px){h2::before,h2::after{width:16px;margin:0 8px}}
+.grid{display:grid;gap:18px}
+.formats{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:22px 14px;text-align:center}
+.card .ico{font-size:2.2rem;margin-bottom:6px}
+.card h3{margin:0;color:var(--blue);font-size:1.25rem}
+.card small{color:var(--muted)}
+.alt-bg{background:var(--ice)}
+.features{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.feat{display:flex;gap:14px;align-items:center;background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:16px}
+.dot{flex:none;width:52px;height:52px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:1.5rem}
+.feat b{color:var(--blue);display:block}
+.feat span{color:var(--muted);font-size:.92rem}
+.storage{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;margin-top:22px}
+.storage .card{flex:1 1 240px;display:flex;align-items:center;gap:14px;text-align:left}
+.pricing{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.plan{background:var(--card);border:1.5px solid var(--line);border-radius:14px;overflow:hidden}
+.plan header{position:static;background:var(--blue);color:#fff;padding:14px;text-align:center;font-weight:800;font-size:1.2rem}
+:root[data-theme="dark"] .plan header{color:#0a1528}
+.plan .sub{background:var(--ice);text-align:center;padding:8px;font-weight:700}
+.row{display:flex;justify-content:space-between;padding:14px 22px;border-top:1px solid var(--line);font-size:1.05rem}
+.row b{font-size:1.15rem}
+.min{background:var(--red);color:#fff;text-align:center;font-weight:800;padding:14px;border-radius:10px;margin-top:18px;font-size:1.15rem}
+.notes{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:24px;margin-top:28px}
+.notes h3{color:var(--red);margin:0 0 10px;font-size:1rem;letter-spacing:.05em}
+.notes ul{margin:0;padding-left:20px}
+.notes li{margin:8px 0;color:var(--muted)}
+.contact{background:var(--navy);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.cgrid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:28px}
+.cgrid a{background:rgba(255,255,255,.08);border-radius:12px;padding:18px;text-decoration:none;display:block;word-break:break-word}
+.cgrid a:hover{background:rgba(255,255,255,.16)}
+.cgrid small{display:block;opacity:.7;margin-bottom:4px}
+footer{background:#021f31;color:#fff;text-align:center;padding:22px 20px;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+footer em{display:block;margin-top:10px;font-family:"Brush Script MT","Segoe Script",cursive;font-size:1.4rem;text-transform:none;letter-spacing:0}
+</style>
+<link rel="icon" type="image/png" href="1000072473.jpg">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top" aria-label="Memory Vault home"><img src="logo.png" alt="Memory Vault – Preserve your memories today"></a>
+  <nav><a href="#formats">Formats</a><a href="#pricing">Pricing</a><a class="cta" href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <img class="herologo" src="logo.png" alt="Memory Vault">
+  <h1>We Convert Your Old Media to Digital</h1>
+  <p>So you can relive, share and keep your memories forever.</p>
+  <a class="btn" href="#contact">Get Started</a><a class="btn alt" href="#pricing">See Pricing</a>
+  <div class="script">Preserve Your Memories Today.</div>
+</div></div>
+
+<section id="formats"><div class="wrap">
+  <h2>Formats We Convert</h2>
+  <div class="grid formats">
+    <div class="card"><div class="ico">📼</div><h3>VHS</h3><small>(NTSC &amp; PAL)</small></div>
+    <div class="card"><div class="ico">📼</div><h3>VHS-C</h3><small>(NTSC &amp; PAL)</small></div>
+    <div class="card"><div class="ico">📼</div><h3>Betamax</h3></div>
+    <div class="card"><div class="ico">📼</div><h3>MiniDV</h3></div>
+    <div class="card"><div class="ico">📼</div><h3>Hi8</h3><small>(8mm)</small></div>
+    <div class="card"><div class="ico">🎞️</div><h3>8mm / Super 8</h3><small>(film reels)</small></div>
+    <div class="card"><div class="ico">💿</div><h3>CDs</h3><small>(video &amp; audio data)</small></div>
+  </div>
+  <div class="storage">
+    <div class="card"><div class="ico">☁️</div><div><h3>Google Drive</h3><small>(online storage)</small></div></div>
+    <div class="card"><div class="ico">💾</div><div><h3>USB Drive</h3><small>(needs to be provided)</small></div></div>
+  </div>
+</div></section>
+
+<section class="alt-bg"><div class="wrap">
+  <h2>Why Memory Vault</h2>
+  <div class="grid features">
+    <div class="feat"><div class="dot">$</div><div><b>Affordable Prices</b><span>High quality video</span></div></div>
+    <div class="feat"><div class="dot">💾</div><div><b>Flexible storage options</b><span>Google Drive or your own USB</span></div></div>
+    <div class="feat"><div class="dot">✂️</div><div><b>Video Editing &amp; Segmentation</b></div></div>
+    <div class="feat"><div class="dot">🔊</div><div><b>Audio/Video Fixes</b></div></div>
+    <div class="feat"><div class="dot">⏱️</div><div><b>Fast Turnaround</b><span>Standard service</span></div></div>
+    <div class="feat"><div class="dot">📍</div><div><b>Located in Edmonton</b><span>Ship across Canada</span></div></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>Pricing</h2>
+  <div class="grid pricing">
+    <div class="plan"><header>Standard Tapes</header><div class="sub">Up to 1.5 hours</div>
+      <div class="row"><span>1 – 9 tapes</span><b>$15 each</b></div>
+      <div class="row"><span>10 – 19 tapes</span><b>$12 each</b></div>
+      <div class="row"><span>20+ tapes</span><b>$9 each</b></div></div>
+    <div class="plan"><header>Extended-Length Tapes</header><div class="sub">Over 1.5 hours</div>
+      <div class="row"><span>1 – 9 tapes</span><b>$20 each</b></div>
+      <div class="row"><span>10 – 19 tapes</span><b>$18 each</b></div>
+      <div class="row"><span>20+ tapes</span><b>$16 each</b></div></div>
+  </div>
+  <div class="min">Minimum order: $40</div>
+  <div class="notes">
+    <h3>IMPORTANT NOTES</h3>
+    <ul>
+      <li>Any tapes exceeding 3 hours of footage are an added cost.</li>
+      <li>Blank tapes or tapes that don’t play are not charged.</li>
+      <li>Minor issues may be fixed free where possible.</li>
+      <li>Tapes that are eaten, jammed or require repair may require repair at an added cost.</li>
+      <li>If 5 or more tapes are required to be completed in less than 24 hours, it is an added cost.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Get In Touch</h2>
+  <div class="grid cgrid">
+    <a href="mailto:hamdi@memoryvaultyeg.com"><small>✉️ Email</small>hamdi@memoryvaultyeg.com</a>
+    <a href="tel:+17802036195"><small>📞 Phone</small>780-203-6195</a>
+    <a href="https://www.facebook.com/MemoryVaultYEG" target="_blank" rel="noopener"><small>Facebook</small>MemoryVaultYEG</a>
+    <a href="https://www.instagram.com/memoryvaultyeg" target="_blank" rel="noopener"><small>Instagram</small>@memoryvaultyeg</a>
+  </div>
+</div></section>
+</main>
+
+<footer>Edmonton, Alberta &nbsp;|&nbsp; Shipments accepted across Canada<em>Your memories matter.</em></footer>
+</body>
+</html>
